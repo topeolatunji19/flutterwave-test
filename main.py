@@ -1,9 +1,6 @@
 from flask import Flask, jsonify, request
-import os
 
 app = Flask(__name__)
-
-error_code = os.environ.get("ERROR_CODE")
 
 
 @app.route("/split-payments/compute", methods=["POST"])
